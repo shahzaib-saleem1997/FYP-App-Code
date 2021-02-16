@@ -4,18 +4,18 @@ import Feather from 'react-native-vector-icons/dist/Feather';
 import Ionicons from 'react-native-vector-icons/dist/Ionicons';
 import FontAwesome from 'react-native-vector-icons/dist/FontAwesome';
 
-
+import HomeScreenStackNavigation from './HomeScreenStackNavigation';
 import BookingScreen from '../screens/BookingScreen';
-import HomeScreen from '../screens/HomeScreen';
 import ReportsScreen from '../screens/ReportsScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+
 
 const Tab = createBottomTabNavigator(); 
 
 function MyTabs(){
     return(  
         <Tab.Navigator>
-            <Tab.Screen name="Home" component={HomeScreen} 
+            <Tab.Screen name="Home" component={HomeScreenStackNavigation} 
                 options={{
                     tabBarIcon: ({ size, color }) => (
                       <Feather name="home" size={size} color={color} />
