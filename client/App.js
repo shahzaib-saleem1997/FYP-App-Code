@@ -18,10 +18,10 @@ const App = () => {
   return (
     <>
       <Header/>
-      <NavigationContainer style={{ backgroundColor:'#F3F6FF'}}>
+      <NavigationContainer>
         <MyTabs/>
       </NavigationContainer>
-      </>
+    </>
       
   );
 };
